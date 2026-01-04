@@ -18,11 +18,12 @@
 # 🌀 Stranger Things Cursor Effect | ReactJS
 
 A **Stranger Things–inspired fluid cursor hover effect** built using **ReactJS**.  
-This project recreates the viral **glowing, cinematic cursor animation** inspired by the *Upside Down* aesthetic — perfect for modern portfolios, landing pages, and creative websites.
+This project recreates the viral **glowing, cinematic cursor animation** inspired by the *Upside Down* aesthetic - perfect for modern portfolios, landing pages, and creative websites.
 
 🌐 **Live Website:** https://stangerthings.einzigartige.in/
 
 > ⚠️ Frontend-only project. No user data is collected or stored.
+<img width="1365" height="651" alt="image" src="https://github.com/user-attachments/assets/d9a94e0c-bc2e-414c-a38e-b35417dfd171" />
 
 ---
 
@@ -86,13 +87,19 @@ Open `http://localhost:3000` in your browser.
 ```
 stangerThings/
 │── public/
+│   ├── images/
 │── src/
+│   ├── assets/
+│   │   └── react.csv
 │   ├── components/
-│   │   └── CursorEffect.jsx
-│   ├── styles/
-│   │   └── cursor.css
+│   │   └── Hero.css
+│   │   └── Hero.jsx
+│   │   └── Navbar.css
+│   │   └── Navbar.jsx
+│   ├── App.css
 │   ├── App.jsx
-│   └── index.js
+│   └── index.css
+│   └── main.js
 │── package.json
 └── README.md
 ```
