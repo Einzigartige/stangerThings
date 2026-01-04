@@ -8,9 +8,6 @@
     <img src="https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge" />
   </a>
   <img src="https://img.shields.io/badge/ReactJS-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel" />
-  <img src="https://img.shields.io/github/license/Einzigartige/stangerThings?style=for-the-badge" />
-  <img src="https://img.shields.io/github/stars/Einzigartige/stangerThings?style=for-the-badge" />
 </p>
 
 ---
