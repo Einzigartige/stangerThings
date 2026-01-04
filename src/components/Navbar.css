@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+.navbar {
+  position: fixed;
+  width: 95%;
+  top: 0;
+  height: 72px;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: black;
+  text-shadow:
+    0 0 8px rgba(179, 0, 0, 0.6),
+    0 0 18px rgba(179, 0, 0, 0.4);
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #e6e6e6;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #b30000;
+  box-shadow: 0 0 10px rgba(179, 0, 0, 0.8);
+  transition: width 0.35s ease;
+}
+
+.nav-links li a:hover {
+  color: #ff4d4d;
+  transform: scale(1.05);
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Social Media Icons */
+.nav-social {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+}
+
+.nav-social li a {
+  color: #e6e6e6;
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-social li a:hover {
+  color: #ff4d4d;
+  transform: scale(1.2);
+}
+
+/* Hamburger menu toggle */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.nav-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links, .nav-social {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .nav-links.active, .nav-social.active {
+    max-height: 600px; /* enough to show all links + icons */
+  }
+
+  .nav-links li a, .nav-social li a {
+    font-size: 18px;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+}
